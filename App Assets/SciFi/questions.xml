@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<questions>
+    <question>
+        <questionText>2001 is famous for which psycopathic artificial intelligence?</questionText>
+        <answer1Text>Daisy Daisy</answer1Text>
+        <answer2Text>HAL 9000</answer2Text>
+        <answer3Text>Zen</answer3Text>
+        <correctAnswer>2</correctAnswer>
+    </question>
+    <question>
+        <questionText>What is the name of the first spaceship used in the BBC 1970s space opera Blake's 7?</questionText>
+        <answer1Text>Liberator</answer1Text>
+        <answer2Text>Scorpio</answer2Text>
+        <answer3Text>Xenon Base</answer3Text>
+        <correctAnswer>1</correctAnswer>
+    </question>
+    <question>
+        <questionText>How many regenerations does a timelord have in the BBC show Doctor Who?</questionText>
+        <answer1Text>3</answer1Text>
+        <answer2Text>24</answer2Text>
+        <answer3Text>13</answer3Text>
+        <correctAnswer>3</correctAnswer>
+    </question>
+    <question>
+        <questionText>What did Deep Thought spend 7 million years calculating as the possible answer to life, the universe, and everything?</questionText>
+        <answer1Text>Man has no purpose</answer1Text>
+        <answer2Text>42</answer2Text>
+        <answer3Text>The world will end soon</answer3Text>
+        <correctAnswer>2</correctAnswer>
+    </question>
+    <question>
+        <questionText>What film was the source of inspiration for the 80s boy band Duran Duran?</questionText>
+        <answer1Text>Barbarella</answer1Text>
+        <answer2Text>Logan's Run</answer2Text>
+        <answer3Text>Saturn 5</answer3Text>
+        <correctAnswer>1</correctAnswer>
+    </question>
+</questions>
