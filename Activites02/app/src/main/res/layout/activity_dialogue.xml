@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.leonbaird.activites02.DialogueActivity">
+
+    <TextView
+        android:id="@+id/dialogue_text_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dialogue_text_title"
+        android:textSize="25sp"
+        android:textStyle="bold"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/dialogue_text_title"
+        android:layout_marginTop="8dp"
+        android:background="#000000" />
+
+    <ImageView
+        android:id="@+id/dialogue_image_icon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/dialogue_text_title"
+        android:layout_marginTop="15dp"
+        android:src="@android:drawable/ic_dialog_info"
+        android:contentDescription="@string/dialogue_description_icon"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/dialogue_image_icon"
+        android:layout_toRightOf="@+id/dialogue_image_icon"
+        android:layout_toEndOf="@+id/dialogue_image_icon"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="15dp"
+        android:text="@string/dialoge_text_info"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/dialogue_button_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dialogue_image_icon"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/common_text_ok"/>
+
+</RelativeLayout>

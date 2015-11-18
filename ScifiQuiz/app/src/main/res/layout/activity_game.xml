@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.leonbaird.scifiquiz.GameActivity">
+
+    <TextView
+        android:id="@+id/game_text_question_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Question 1"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        tools:ignore="HardcodedText" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#444444"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:id="@+id/game_text_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="This will be the question asked..."
+        android:textSize="18sp"
+        tools:ignore="HardcodedText" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/game_button_answer1"
+            android:tag="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Answer Text 1"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/game_button_answer2"
+            android:tag="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Answer Text 2"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/game_button_answer3"
+            android:tag="3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Answer Text 3"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+</LinearLayout>

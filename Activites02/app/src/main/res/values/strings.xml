@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Activites 02</string>
+    <string name="main_text_info">Please enter some information:</string>
+    <string name="main_edittext_hint">Enter some stuff</string>
+    <string name="main_button_passon">Pass on info</string>
+    <string name="datain_text_welcome">Welcome to the second activity</string>
+    <string name="datain_edittext_hint">Enter Value</string>
+    <string name="datain_button_save">Save Data</string>
+    <string name="main_button_openactivity">Open Activity Only</string>
+    <string name="main_button_openandsend">Open Activity and Send Data</string>
+    <string name="menu_info">Show Information</string>
+    <string name="menu_hello">Say Hello</string>
+    <string name="main_code_hi">Hi there!</string>
+    <string name="main_code_username">"Current username is "</string>
+    <string name="menu_dialogue">Dialog</string>
+    <string name="menu_contacts">Show Contacts</string>
+    <string name="dialogue_text_title">Information Dialogue</string>
+    <string name="dialogue_description_icon">Information Icon</string>
+    <string name="dialoge_text_info">Hi there from me!</string>
+    <string name="common_text_ok">OK</string>
+    <string name="dialogue_title">Dialogue Demo</string>
+    <string name="image_text_description">Here is the image provided:</string>
+    <string name="image_description">Image Passed to Activity</string>
+</resources>
