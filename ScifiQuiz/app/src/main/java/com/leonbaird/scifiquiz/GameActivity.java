@@ -29,6 +29,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game);
 
+        if (savedInstanceState != null) {
+            score = savedInstanceState.getInt(BUNDLE_SCORE);
+            currentQuestion = savedInstanceState.getInt(BUNDLE_QUESTION);
+        }
+
         // setup outlets
         questionNumber = (TextView) findViewById(R.id.game_text_question_number);
         questionText = (TextView) findViewById(R.id.game_text_question);
@@ -43,6 +48,18 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
 
         questions = GameController.getGameController(this).getQuestions();
         showNextQuestion();
+    }
+
+    // Bundle Keys
+    private static final String BUNDLE_SCORE = "score";
+    private static final String BUNDLE_QUESTION = "question";
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+
+        outState.putInt(BUNDLE_SCORE, score);
+        outState.putInt(BUNDLE_QUESTION, currentQuestion);
     }
 
     private void showNextQuestion() {

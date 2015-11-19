@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.leonbaird.fragments.MainFragment"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/main_frag_text_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Main Fragment"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:id="@+id/main_frag_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This will change"
+        android:textSize="20sp"
+        android:layout_below="@+id/main_frag_text_title"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/main_frag_button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Open Fragment"
+        android:layout_alignParentBottom="true"/>
+
+    <Button
+        android:id="@+id/main_frag_button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Open Fragment as Activity"
+        android:layout_above="@id/main_frag_button1"/>
+
+</RelativeLayout>
