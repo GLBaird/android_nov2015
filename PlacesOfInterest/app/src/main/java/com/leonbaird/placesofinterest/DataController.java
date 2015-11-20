@@ -4,8 +4,10 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
+import java.io.File;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.Locale;
@@ -18,6 +20,19 @@ public class DataController {
 
     // DB Values
     private static final String DATABASE_NAME = "places_of_interest";
+
+    // DB Update Listener
+    private DataControllerUpdateListener listener;
+
+    public void setUpdateListener(DataControllerUpdateListener listener) {
+        this.listener = listener;
+    }
+
+    private void updateListener() {
+        if (listener != null) {
+            listener.dataControllerHasUpdated();
+        }
+    }
 
 
     private DataController(Context c) {
@@ -60,6 +75,7 @@ public class DataController {
         SQLiteDatabase db = openDB();
         db.insert("places", null, newPlace.getDBValues());
         db.close();
+        updateListener();
     }
 
     public Place getPlaceWithID(String id) {
@@ -74,6 +90,8 @@ public class DataController {
             result.moveToFirst();
             found = unpackCursor(result);
         }
+
+        db.close();
 
         return found;
     }
@@ -99,12 +117,44 @@ public class DataController {
     }
 
     public List<Place> getAllPlaces() {
+        SQLiteDatabase db = openDB();
+        String query = "SELECT * FROM places ORDER BY placename ASC, datevisited DESC";
+        Cursor results = db.rawQuery(query, null);
 
+        ArrayList<Place> places = new ArrayList<>();
+
+        if (results.moveToFirst()) {
+            do {
+                places.add( unpackCursor(results) );
+            } while (results.moveToNext());
+        }
+
+        db.close();
+
+        return places;
     }
 
     public void deletePlaceWithID(String id) {
+        Place placeToDelete = getPlaceWithID(id);
+        if (placeToDelete != null && placeToDelete.imagePath != null && !placeToDelete.imagePath.isEmpty()) {
+            File imageFile = new File(placeToDelete.imagePath);
+            if (imageFile.exists()) {
+                imageFile.delete();
+            }
+        }
 
+        SQLiteDatabase db = openDB();
+        String query = "DELETE FROM places WHERE ID='"+id+"'";
+        db.execSQL(query);
+        db.close();
+        updateListener();
     }
 
 
+}
+
+// Interface to listening for updates
+
+interface DataControllerUpdateListener {
+    public void dataControllerHasUpdated();
 }

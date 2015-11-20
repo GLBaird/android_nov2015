@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    style="@style/Base.Widget.AppCompat.ListView"
+    android:background="#EFEFEF">
+
+    <ImageView
+        android:id="@+id/cell_image"
+        android:layout_width="60sp"
+        android:layout_height="60sp"
+        android:scaleType="centerCrop"
+        android:contentDescription="Photo of place"
+        android:background="#444444"/>
+
+    <TextView
+        android:id="@+id/cell_placename"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name of Place"
+        android:textSize="20sp"
+        android:layout_alignTop="@+id/cell_image"
+        android:layout_toEndOf="@+id/cell_image"
+        android:layout_toRightOf="@+id/cell_image"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/cell_datevisited"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="10/10/2015"
+        android:textSize="18sp"
+        android:layout_alignBottom="@+id/cell_image"
+        android:layout_toEndOf="@+id/cell_image"
+        android:layout_toRightOf="@+id/cell_image"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="5dp"/>
+
+</RelativeLayout>

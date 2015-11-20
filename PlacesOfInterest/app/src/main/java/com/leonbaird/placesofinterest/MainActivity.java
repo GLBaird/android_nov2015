@@ -1,11 +1,12 @@
 package com.leonbaird.placesofinterest;
 
+import android.content.Intent;
+import android.content.res.Configuration;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 
@@ -17,6 +18,32 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        // if running on mobile add fragment progmatically
+        if ( (getResources().getConfiguration().screenLayout & Configuration.SCREENLAYOUT_SIZE_MASK)
+                < Configuration.SCREENLAYOUT_SIZE_LARGE) {
+
+            FragmentManager fm = getSupportFragmentManager();
+            Fragment placeList = fm.findFragmentById(R.id.main_fragment_container);
+
+            if (placeList == null) {
+                placeList = new ListFragment();
+                fm.beginTransaction()
+                        .add(R.id.main_fragment_container, placeList, "placelist")
+                        .commit();
+            } else {
+                fm.beginTransaction()
+                        .attach(placeList)
+                        .commit();
+            }
+
+        }
 
     }
 
@@ -35,7 +62,11 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.action_add) {
+
+            Intent addActivity = new Intent(this, AddPlace.class);
+            startActivity(addActivity);
+
             return true;
         }
 
