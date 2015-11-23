@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Menus</string>
+    
+    <!-- Main Option Menu -->
+    <string name="main_option1">Option 1</string>
+    <string name="main_option2">Option 2</string>
+    <string name="main_option3">Option 3</string>
+    
+    <!-- Main Contexual Menu -->
+    <string name="main_context1">Context 1</string>
+    <string name="main_context2">Context 2</string>
+    <string name="main_context3">Context 3</string>
+    
+    <!-- Main View -->
+    <string name="main_title">Options and Context Menus</string>
+    <string name="main_info">Press OPTIONS for that menu, or hold down on the button to open the\nCONTEXTUAL MENU.</string>
+    <string name="main_button_title">Click and Hold</string>
+    <string name="main_button_quit">Exit</string>
+    
+    
+
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="tv_shows">
+        <item name="fawlty">Fawlty Towers</item>
+        <item name="blakes">Blake\'s 7</item>
+        <item name="docwho">Doctor Who</item>
+        <item name="tales">Tales of the Unexpected</item>
+        <item name="prisoner">The Prisoner</item>
+        <item name="sullivans">The Sullivans</item>
+        <item name="rainbow">Rainbow</item>
+        <item name="saint">The Saint</item>
+        <item name="thunderbirds">Thunderbirds</item>
+        <item name="space1999">Space 1999</item>
+        <item name="bsg">Battle Star Galactica</item>
+        <item name="buck">Buck Rogers</item>
+        <item name="good">The Good Life</item>
+        <item name="tmb">To The Mannor Born</item>
+        <item name="edc">Ever Decreasing Circles</item>
+        <item name="ronnies">The Two Ronnies</item>
+        <item name="porridge">Porridge</item>
+        <item name="oah">Open All Hours</item>
+        <item name="ofh">Only Fools and Horses</item>
+    </string-array>
+</resources>

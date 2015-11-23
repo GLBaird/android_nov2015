@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Camera</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="info">Click the button to take an image and save it to disk.</string>
+    <string name="url_header">URL of saved image:</string>
+    <string name="description">Image From Camera</string>
+    <string name="button_title">Open Camera</string>
+
+</resources>

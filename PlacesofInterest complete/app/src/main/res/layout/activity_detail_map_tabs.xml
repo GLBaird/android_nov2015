@@ -1,0 +1,35 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.leonbaird.placesofinterest.DetailMapTabsActivity">
+
+    <LinearLayout
+        android:id="@+id/tabs_tabbar"
+        style="@style/PlacesTabbar">
+
+        <Button
+            android:id="@+id/tabs_detailtab"
+            style="@style/PlacesTabButton"
+            android:text="Place Details"
+            android:tag="DetailFragment"
+            android:background="@color/PlacesTabSelected"/>
+
+        <Button
+            android:id="@+id/tabs_maptab"
+            style="@style/PlacesTabButton"
+            android:tag="MapFragment"
+            android:text="Map"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/tabs_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+</LinearLayout>

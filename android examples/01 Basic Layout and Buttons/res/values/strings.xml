@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Basic Buttons</string>
+    <string name="action_settings">Settings</string>
+
+    	<string name="textview_title">Welcome to Android Buttons</string>
+    	
+    	<string name="textview_welcome_message">Welcome to Android Development. This simple app will demonstrate the basics of building a user interface, and coding the actions onto two buttons. We will be using XML and Java for this example.\n\nYou will find below a Text View with two accompanying buttons. Click one of the buttons and a message will display in the Text View. This will let you know which of the two buttons you have clicked.</string>
+
+	<string name="button1_text">Button 1</string>
+	<string name="button2_text">Button 2</string>    	
+    	
+</resources>

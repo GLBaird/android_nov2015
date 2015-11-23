@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SingletonForData</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="main_title">Singletons</string>
+    <string name="main_info">Enter the data below, to store in a singleton</string>
+    <string name="main_surname_hint">Surname</string>
+    <string name="main_forename_hint">Forename</string>
+    <string name="main_button_save">Save</string>
+    <string name="main_button_view">View</string>
+    <string name="view_title">List of Names</string>
+
+</resources>

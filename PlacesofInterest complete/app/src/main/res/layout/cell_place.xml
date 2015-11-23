@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    style="@style/Base.Widget.AppCompat.ListView"
+    android:background="#EFEFEF"
+    android:descendantFocusability="blocksDescendants">
+
+    <ImageView
+        android:id="@+id/cell_image"
+        android:layout_width="60sp"
+        android:layout_height="60sp"
+        android:src="@drawable/ic_places_camera"
+        android:scaleType="fitXY"
+        android:contentDescription="Photograph of the place you visted"/>
+
+    <TextView
+        android:id="@+id/cell_placename"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name of place"
+        android:textSize="20sp"
+        android:layout_alignTop="@+id/cell_image"
+        android:layout_toEndOf="@+id/cell_image"
+        android:layout_toRightOf="@+id/cell_image"
+
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/cell_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="10/10/2015"
+        android:textSize="18sp"
+        android:layout_alignBottom="@+id/cell_image"
+        android:layout_toEndOf="@+id/cell_image"
+        android:layout_toRightOf="@+id/cell_image"
+
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="8dp"/>
+
+    <ImageButton
+        android:id="@+id/cell_delete"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:scaleType="fitCenter"
+        android:background="#EFEFEF"
+        android:src="@drawable/ic_places_delete"
+        android:contentDescription="Delete place"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"/>
+
+</RelativeLayout>

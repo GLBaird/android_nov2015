@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Explicit Intents</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="main_title">Activity One</string>
+    <string name="main_info">Enter come text into the text field, then click NEXT to send this text to and action. Click the RETURN button to have the Activity return some data.</string>
+    <string name="main_text_hint">Enter Some Data</string>
+    <string name="main_button_send">Send Data</string>
+    <string name="main_button_return">Return Data</string>
+    
+    <string name="second_title">Activity Two</string>
+    <string name="second_info">This Activity was opened by an Explicit Intent.</string>
+    <string name="second_subtitle">Data From Activity One</string>
+    <string name="third_title">Activity Three</string>
+    <string name="third_info">Enter some text to return to previous activity.</string>
+    <string name="third_hint">Enter Some Data</string>
+    <string name="third_button">Close Activity</string>
+
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Implicit Intents</string>
+    <string name="action_settings">Settings</string>
+    
+    <string name="info_main">Implicit Intent Demonstration</string>
+    <string name="info_para1">Launch this app via another app capable of image sharing.</string>
+    <string name="image_main">This image has been passed into this intent</string>
+    <string name="image_accessibility_description">Image passed from another app.</string>   
+
+</resources>

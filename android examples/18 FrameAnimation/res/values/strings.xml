@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Frame Animation</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="main_title">Example of Frame Animation</string>
+    <string name="main_info">Click the image below to make it animate:</string>
+    <string name="main_animation_alt_text">Animation Example</string>
+
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Progress Dialog</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="main_title">Spinners and Loader Bars</string>
+    <string name="main_info">Click on the buttons to show a spinner or a progress bar:</string>
+    <string name="main_button_spinner">Spinner</string>
+    <string name="main_progress_button">Progress Bar</string>
+    <string name="main_dialog_button">Show Normal Dialog</string>
+    <string name="dialog_info">This is a dialog</string>
+    <string name="dialog_logo_alt">A logo not belonging to this app</string>
+
+</resources>

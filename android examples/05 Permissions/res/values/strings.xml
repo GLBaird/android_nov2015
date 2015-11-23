@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Permissions</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="wifi_network_test">WIFI Network Test</string>
+    <string name="this_app_will_test_that_your_wifi_is_connected_it_will_need_permission_to_do_this_">This app will test that your wifi is connected. It will need permission to do this.</string>
+    <string name="network_test">Network Test</string>
+    <string name="wifi_network_available">WIFI Network Available</string>
+
+</resources>
